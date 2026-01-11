@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Root Variables */
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #111827;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #111827;
+}
+
+/* Headings */
+/* h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #ffffff;
+} */
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  /* color: white; */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Fields */
+input, textarea, select {
+  @apply bg-gray-800 text-white border border-gray-600 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Cards & Containers */
+.card {
+  @apply bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 0.6rem 1.2rem;
+  }
+}
